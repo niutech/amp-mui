@@ -438,11 +438,11 @@ pre{overflow:auto}.bordered{border:1px solid rgba(0,0,0,.12)}
 
                     <div class="mui-panel">
                         <div class="mui-dropdown">
-                            <button class="mui-btn mui-btn--primary" on="tap:AMP.setState({dropdown_1: !dropdown_1})" type="button">
+                            <button class="mui-btn mui-btn--primary" on="tap:dropdown_1.toggleVisibility" type="button">
                                 Dropdown
                                 <span class="mui-caret"></span>
                             </button>
-                            <ul class="mui-dropdown__menu" [class]="'mui-dropdown__menu' + (dropdown_1 ? ' mui--is-open' : '')">
+                            <ul class="mui-dropdown__menu mui--is-open" id="dropdown_1" hidden>
                                 <li><a href="#">Option 1</a></li>
                                 <li><a href="#">Option 2</a></li>
                                 <li><a href="#">Option 3</a></li>
@@ -451,11 +451,11 @@ pre{overflow:auto}.bordered{border:1px solid rgba(0,0,0,.12)}
                         </div>
 
                         <div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mui-dropdown"</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"mui-btn mui-btn--primary"</span> on=&quot;tap:AMP.setState({dropdown_1: !dropdown_1})&quot;<span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"mui-btn mui-btn--primary"</span> on=&quot;tap:dropdown_1.toggleVisibility&quot;<span class="p">&gt;</span>
     Dropdown
     <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"mui-caret"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"mui-dropdown__menu"</span> [class]=&quot;&apos;mui-dropdown__menu&apos; + (dropdown_1 ? &apos; mui--is-open&apos; : &apos;&apos;)&quot;<span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"mui-dropdown__menu mui--is-open"</span> id=&quot;dropdown_1&quot; hidden<span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Option 1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Option 2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Option 3<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
@@ -473,11 +473,11 @@ pre{overflow:auto}.bordered{border:1px solid rgba(0,0,0,.12)}
 
                     <div class="mui-panel">
                         <div class="mui-dropdown">
-                            <button class="mui-btn mui-btn--primary" on="tap:AMP.setState({dropdown_2: !dropdown_2})" type="button">
+                            <button class="mui-btn mui-btn--primary" on="tap:dropdown_2.toggleVisibility" type="button">
                                 Dropdown
                                 <span class="mui-caret"></span>
                             </button>
-                            <ul class="mui-dropdown__menu mui-dropdown__menu--right" [class]="'mui-dropdown__menu mui-dropdown__menu--right' + (dropdown_2 ? ' mui--is-open' : '')">
+                            <ul class="mui-dropdown__menu mui-dropdown__menu--right mui--is-open" id="dropdown_2" hidden>
                                 <li><a href="#">A very long menu option</a></li>
                                 <li><a href="#">Option 2</a></li>
                                 <li><a href="#">Option 3</a></li>
@@ -486,11 +486,11 @@ pre{overflow:auto}.bordered{border:1px solid rgba(0,0,0,.12)}
                         </div>
 
                         <div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mui-dropdown"</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"mui-btn mui-btn--primary"</span> on=&quot;tap:AMP.setState({dropdown_2: !dropdown_2})&quot;<span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"mui-btn mui-btn--primary"</span> on=&quot;tap:dropdown_2.toggleVisibility&quot;<span class="p">&gt;</span>
     Dropdown
     <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"mui-caret"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"mui-dropdown__menu mui-dropdown__menu--right"</span> [class]=&quot;&apos;mui-dropdown__menu mui-dropdown__menu--right&apos; + (dropdown_2 ? &apos; mui--is-open&apos; : &apos;&apos;)&quot;<span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"mui-dropdown__menu mui-dropdown__menu--right mui--is-open"</span> id=&quot;dropdown_2&quot; hidden<span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>A very long menu option<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Option 2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Option 3<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
@@ -1033,34 +1033,33 @@ pre{overflow:auto}.bordered{border:1px solid rgba(0,0,0,.12)}
                     <h2>Example</h2>
 
                     <div class="mui-panel">
-                        <div class="mui--hide" [class]="overlay_1 ? 'mui-overlay' : 'mui--hide'" on="tap:AMP.setState({overlay_1: false})" tabindex="-1"></div>
-                        <button class="mui-btn mui-btn--primary" on="tap:AMP.setState({overlay_1: true})">Activate overlay</button>
+                        <div class="mui-overlay" id="overlay_1" on="tap:overlay_1.hide" tabindex="-1" role="dialog" hidden></div>
+                        <button class="mui-btn mui-btn--primary" on="tap:overlay_1.show">Activate overlay</button>
                         
-                        <div class="highlight"><pre>&lt;div class=&quot;mui--hide&quot; [class]=&quot;overlay_1 ? &apos;mui-overlay&apos; : &apos;mui--hide&apos;&quot; on=&quot;tap:AMP.setState({overlay_1: false})&quot; tabindex=&quot;-1&quot;&gt;&lt;/div&gt;
-&lt;button class=&quot;mui-btn mui-btn--primary&quot; on=&quot;tap:AMP.setState({overlay_1: true})&quot;&gt;Activate overlay&lt;/button&gt;</pre></div>
+                        <div class="highlight"><pre>&lt;div class=&quot;mui-overlay&quot; id=&quot;overlay_1&quot; on=&quot;tap:overlay_1.hide&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; hidden&gt;&lt;/div&gt;
+&lt;button class=&quot;mui-btn mui-btn--primary&quot; on=&quot;tap:overlay_1.show&quot;&gt;Activate overlay&lt;/button&gt;</pre></div>
 
                     </div>
 
                     <div class="space-bottom"></div>
-
                     <h2>Modal Example</h2>
 
                     <div class="mui-panel">
-                        <div class="mui--hide" [class]="overlay_2 ? 'mui-overlay' : 'mui--hide'" on="tap:AMP.setState({overlay_2: false})" tabindex="-1">
+                        <div class="mui-overlay" id="overlay_2" tabindex="-1" role="dialog" hidden>
                             <div class="mui-panel">
                                 <p>This is a modal</p>
-                                <button class="mui-btn mui-btn--primary" on="tap:AMP.setState({overlay_2: false})">Close</button>
+                                <button class="mui-btn mui-btn--primary" on="tap:overlay_2.hide">Close</button>
                             </div>
                         </div>
-                        <button class="mui-btn mui-btn--primary" on="tap:AMP.setState({overlay_2: true})">Activate modal</button>
+                        <button class="mui-btn mui-btn--primary" on="tap:overlay_2.show">Activate modal</button>
                         
-                        <div class="highlight"><pre>&lt;div class=&quot;mui--hide&quot; [class]=&quot;overlay_2 ? &apos;mui-overlay&apos; : &apos;mui--hide&apos;&quot; on=&quot;tap:AMP.setState({overlay_2: false})&quot; tabindex=&quot;-1&quot;&gt;
+                        <div class="highlight"><pre>&lt;div class=&quot;mui-overlay&quot; id=&quot;overlay_2&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; hidden&gt;
   &lt;div class=&quot;mui-panel&quot;&gt;
     &lt;p&gt;This is a modal&lt;/p&gt;
-    &lt;button class=&quot;mui-btn mui-btn--primary&quot; on=&quot;tap:AMP.setState({overlay_2: false})&quot;&gt;Close&lt;/button&gt;
+    &lt;button class=&quot;mui-btn mui-btn--primary&quot; on=&quot;tap:overlay_2.hide&quot;&gt;Close&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;button class=&quot;mui-btn mui-btn--primary&quot; on=&quot;tap:AMP.setState({overlay_2: true})&quot;&gt;Activate modal&lt;/button&gt;</pre></div>
+&lt;button class=&quot;mui-btn mui-btn--primary&quot; on=&quot;tap:overlay_2.show&quot;&gt;Activate modal&lt;/button&gt;</pre></div>
 
                     </div>
 
