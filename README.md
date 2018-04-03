@@ -12,8 +12,8 @@ Check out the [demo page](https://niutech.github.io/amp-mui/) as a valid AMP HTM
 
 ## Differences from MUI
 
- - Removed `!important  and `style=""` attributes
- - Removed overlay and ripple
+ - Removed `!important`  and `style=""` attributes
+ - Removed overlay and ripple effect
  - Changed syntax for dropdowns and tabs
 
 ## License
